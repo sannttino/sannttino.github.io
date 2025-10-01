@@ -35,25 +35,29 @@
         }
         .words-section {
             margin-top: 2rem;
-            width: 100%;
-            max-width: 650px;
+            width: 95%;
+            max-width: 700px;
             min-height: 150px;
-            background: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.85);
             border-radius: 16px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            padding: 24px 12px;
+            word-break: break-word;
         }
         /* Puedes personalizar más estilos aquí */
         .photo-collage {
             margin-top: 2.5rem;
-            width: 100%;
+            width: 98vw;
             max-width: 700px;
             overflow-x: auto;
             display: flex;
-            gap: 16px;
-            padding: 16px 0;
+            gap: 12px;
+            padding: 12px 0;
             scroll-snap-type: x mandatory;
         }
         .photo-collage::-webkit-scrollbar {
@@ -64,14 +68,32 @@
             border-radius: 8px;
         }
         .photo-collage img {
-            height: 340px;
+            height: 220px;
             width: auto;
+            max-width: 90vw;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.12);
             object-fit: cover;
             scroll-snap-align: center;
             background: #fff;
         }
+    </style>
+    <style>
+    @media (max-width: 600px) {
+        .main-message {
+            font-size: 2.1rem;
+            padding: 0 8px;
+        }
+        .words-section {
+            font-size: 1rem;
+            padding: 12px 4px;
+            max-width: 98vw;
+        }
+        .photo-collage img {
+            height: 120px;
+            max-width: 98vw;
+        }
+    }
     </style>
  
 <body>
@@ -97,3 +119,4 @@
     </div>
 </body>
 </html>
+
